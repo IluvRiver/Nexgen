@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.erp.Manager_Fix">
+    <children>
+        <Pane layoutY="-1.0" prefHeight="900.0" prefWidth="800.0" style="-fx-background-color: #D9D9D9;">
+            <children>
+                <!-- 사원번호 -->
+                <Pane layoutX="106.0" layoutY="520.0" prefHeight="34.0" prefWidth="80.0" style="-fx-background-color: #7491AC;">
+                    <children>
+                        <Label alignment="CENTER" layoutX="16.0" layoutY="3.0" prefHeight="30.0" prefWidth="48.0" text="사원번호" textFill="WHITE" />
+                    </children>
+                </Pane>
+                <Pane layoutX="186.0" layoutY="520.0" prefHeight="34.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;">
+                    <children>
+                        <Label fx:id="Manager_View_num" alignment="CENTER" layoutX="1.0" layoutY="2.0" prefHeight="30.0" prefWidth="500.0" text="Label">
+                            <font>
+                                <Font name="Malgun Gothic" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <!-- 비밀번호 -->
+                <Pane layoutX="106.0" layoutY="400.0" prefHeight="34.0" prefWidth="80.0" style="-fx-background-color: #7491AC;">
+                    <children>
+                        <Label alignment="CENTER" layoutX="16.0" layoutY="3.0" prefHeight="30.0" prefWidth="48.0" text="비밀번호" textFill="WHITE" />
+                    </children>
+                </Pane>
+                <Pane layoutX="186.0" layoutY="400.0" prefHeight="34.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;">
+                    <children>
+                        <Label fx:id="Manager_View_pw" alignment="CENTER" layoutX="1.0" layoutY="2.0" prefHeight="30.0" prefWidth="500.0" text="Label">
+                            <font>
+                                <Font name="Malgun Gothic" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <!-- 사원명 -->
+                <Pane layoutX="430.0" layoutY="66.0" prefHeight="34.0" prefWidth="80.0" style="-fx-background-color: #7491AC;">
+                    <children>
+                        <Label alignment="CENTER" layoutX="16.0" layoutY="3.0" prefHeight="30.0" prefWidth="48.0" text="사원명" textFill="WHITE" />
+                    </children>
+                </Pane>
+                <Pane layoutX="510.0" layoutY="66.0" prefHeight="34.0" prefWidth="160.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                        <Label fx:id="Manager_View_Name" alignment="CENTER" layoutX="1.0" layoutY="2.0" prefHeight="30.0" prefWidth="160.0" text="Label">
+                            <font>
+                                <Font name="Malgun Gothic" size="12.0" />
+                            </font>
+                        </Label>
+               </children>
+                </Pane>
+                <!-- 주민등록번호 -->
+                <Pane layoutX="106.0" layoutY="460.0" prefHeight="34.0" prefWidth="80.0" style="-fx-background-color: #7491AC;">
+                    <children>
+                        <Label alignment="CENTER" layoutX="2.0" layoutY="3.0" prefHeight="30.0" prefWidth="80.0" text="주민등록번호" textFill="WHITE" />
+                    </children>
+                </Pane>
+                <Pane layoutX="186.0" layoutY="460.0" prefHeight="34.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;">
+                    <children>
+                        <Label fx:id="Manager_View_Security_Num" alignment="CENTER" layoutX="1.0" layoutY="2.0" prefHeight="30.0" prefWidth="500.0" text="Label">
+                            <font>
+                                <Font name="Malgun Gothic" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <!-- 전화번호 -->
+                <Pane layoutX="106.0" layoutY="580.0" prefHeight="34.0" prefWidth="80.0" style="-fx-background-color: #7491AC;">
+                    <children>
+                        <Label alignment="CENTER" layoutX="16.0" layoutY="3.0" prefHeight="30.0" prefWidth="48.0" text="전화번호" textFill="WHITE" />
+                    </children>
+                </Pane>
+                <Pane layoutX="186.0" layoutY="580.0" prefHeight="34.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;">
+                    <children>
+                        <Label fx:id="Manager_View_phonenumber" alignment="CENTER" layoutX="1.0" layoutY="2.0" prefHeight="30.0" prefWidth="500.0" text="010-2237-5121">
+                            <font>
+                                <Font name="Malgun Gothic" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <!-- 이메일 -->
+                <Pane layoutX="106.0" layoutY="640.0" prefHeight="34.0" prefWidth="80.0" style="-fx-background-color: #7491AC;">
+                    <children>
+                        <Label alignment="CENTER" layoutX="16.0" layoutY="3.0" prefHeight="30.0" prefWidth="48.0" text="이메일" textFill="WHITE" />
+                    </children>
+                </Pane>
+                <Pane layoutX="186.0" layoutY="640.0" prefHeight="34.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;">
+                    <children>
+                        <Label fx:id="Manager_View_Email" alignment="CENTER" layoutX="1.0" layoutY="2.0" prefHeight="30.0" prefWidth="500.0" text="Label">
+                            <font>
+                                <Font name="Malgun Gothic" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <!-- 주소 -->
+                <Pane layoutX="106.0" layoutY="700.0" prefHeight="34.0" prefWidth="80.0" style="-fx-background-color: #7491AC;">
+                    <children>
+                        <Label alignment="CENTER" layoutX="16.0" layoutY="3.0" prefHeight="30.0" prefWidth="48.0" text="주소" textFill="WHITE" />
+                    </children>
+                </Pane>
+                <Pane layoutX="186.0" layoutY="700.0" prefHeight="34.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;">
+                    <children>
+                        <Label fx:id="Manager_View_address" alignment="CENTER" layoutX="1.0" layoutY="2.0" prefHeight="30.0" prefWidth="500.0" text="Label">
+                            <font>
+                                <Font name="Malgun Gothic" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <!-- 부서코드 -->
+                <Pane layoutX="106.0" layoutY="760.0" prefHeight="34.0" prefWidth="80.0" style="-fx-background-color: #7491AC;">
+                    <children>
+                        <Label alignment="CENTER" layoutX="16.0" layoutY="3.0" prefHeight="30.0" prefWidth="48.0" text="부서코드" textFill="WHITE" />
+                    </children>
+                </Pane>
+                <Pane layoutX="186.0" layoutY="760.0" prefHeight="34.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;">
+                    <children>
+                        <Label fx:id="Manager_View_Dcode" alignment="CENTER" layoutX="1.0" layoutY="2.0" prefHeight="30.0" prefWidth="500.0" text="Label">
+                            <font>
+                                <Font name="Malgun Gothic" size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <!-- 직위/직급 -->
+                <Pane layoutX="429.0" layoutY="126.0" prefHeight="34.0" prefWidth="80.0" style="-fx-background-color: #7491AC;">
+                    <children>
+                        <Label alignment="CENTER" layoutX="10.0" layoutY="2.0" prefHeight="30.0" prefWidth="60.0" text="직위/직급" textFill="WHITE" />
+                    </children>
+                </Pane>
+                <Pane layoutX="509.0" layoutY="126.0" prefHeight="34.0" prefWidth="160.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                        <Label fx:id="Manager_View_Spot" alignment="CENTER" layoutX="1.0" layoutY="2.0" prefHeight="34.0" prefWidth="160.0" text="Label">
+                            <font>
+                                <Font name="Malgun Gothic" size="12.0" />
+                            </font>
+                        </Label>
+               </children></Pane>
+                <!-- 뒤로 가기 버튼 -->
+                <Button fx:id="Manager_member_fix_close_btn" layoutX="300.0" layoutY="835.0" maxHeight="49.0" maxWidth="194.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #4477FA; -fx-background-radius: 30;" text="뒤로 가기">
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0" />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                    <font>
+                        <Font name="Malgun Gothic" size="12.0" />
+                    </font>
+                </Button>
+            <Label layoutX="385.0" layoutY="807.0" text="1" underline="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="Manager_View1_page2" layoutX="400.0" layoutY="807.0" text="2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="Manager_View_image" fitHeight="300.0" fitWidth="250.0" layoutX="90.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true" />
+            <Pane layoutX="429.0" layoutY="184.0" prefHeight="34.0" prefWidth="80.0" style="-fx-background-color: #7491AC;">
+               <children>
+                  <Label layoutX="22.0" layoutY="10.0" text="부서명" textFill="#fffefe" />
+               </children>
+            </Pane>
+            <Pane layoutX="509.0" layoutY="186.0" prefHeight="34.0" prefWidth="160.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <Label fx:id="Manager_View_Dname" alignment="CENTER" layoutX="1.0" layoutY="2.0" prefHeight="34.0" prefWidth="161.0" text="Label">
+                     <font>
+                        <Font name="Malgun Gothic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

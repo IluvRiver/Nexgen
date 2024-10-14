@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.erp.ManagerMemberFix2">
+        <children>
+            <Pane prefHeight="930.0" prefWidth="800.0" style="-fx-background-color: #D9D9D9;">
+                <children>
+    <TextField fx:id="Manager_Member_bank_name" layoutX="137.0" layoutY="385.0" prefHeight="30.0" prefWidth="500.0" promptText="■은행명">
+        <font>
+            <Font name="Malgun Gothic" size="16.0" />
+        </font>
+    </TextField>
+    <TextField fx:id="Manager_Member_Bname" layoutX="137.0" layoutY="505.0" prefHeight="30.0" prefWidth="500.0" promptText="■예금주">
+        <font>
+            <Font name="Malgun Gothic" size="16.0" />
+        </font></TextField>
+    <TextField fx:id="Manager_Member_Money" layoutX="137.0" layoutY="565.0" prefHeight="30.0" prefWidth="500.0" promptText="■연봉">
+        <font>
+            <Font name="Malgun Gothic" size="16.0" />
+        </font></TextField>
+    <TextField fx:id="Manager_Member_bankaccount" layoutX="137.0" layoutY="445.0" prefHeight="30.0" prefWidth="500.0" promptText="■계좌번호">
+        <font>
+            <Font name="Malgun Gothic" size="16.0" />
+        </font>
+    </TextField>
+    <Label alignment="CENTER" layoutX="308.0" layoutY="323.0" prefHeight="30.0" prefWidth="167.0" text="급여지급사항란">
+        <font>
+            <Font name="Arial" size="23.0" />
+        </font></Label>
+                    <Button fx:id="Manager_member_fix_btn" layoutX="400.0" layoutY="849.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #4477FA; -fx-background-radius: 30;" text="등록">
+                        <textFill>
+                            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                <stops>
+                                    <Stop>
+                                        <color>
+                                            <Color red="1.0" green="1.0" blue="1.0" />
+                                        </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                        <color>
+                                            <Color red="1.0" green="1.0" blue="1.0" />
+                                        </color>
+                                    </Stop>
+                                </stops>
+                            </RadialGradient>
+                        </textFill>
+                        <font>
+                            <Font name="Malgun Gothic" size="12.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="Manager_member_fix_close_btn" layoutX="200.0" layoutY="849.0" maxHeight="50.0" maxWidth="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #4477FA; -fx-background-radius: 30;" text="뒤로 가기">
+                        <textFill>
+                            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                <stops>
+                                    <Stop>
+                                        <color>
+                                            <Color red="1.0" green="1.0" blue="1.0" />
+                                        </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                        <color>
+                                            <Color red="1.0" green="1.0" blue="1.0" />
+                                        </color>
+                                    </Stop>
+                                </stops>
+                            </RadialGradient>
+                        </textFill>
+                        <font>
+                            <Font name="Malgun Gothic" size="12.0" />
+                        </font>
+                    </Button>
+            <Label layoutX="331.0" layoutY="44.0" text="입사 / 퇴사">
+               <font>
+                  <Font name="Arial" size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Manager_Member_Sdate" layoutX="137.0" layoutY="105.0" prefHeight="30.0" prefWidth="500.0" promptText="■입사일">
+               <font>
+                  <Font name="Malgun Gothic" size="16.0" />
+               </font></TextField>
+            <TextField fx:id="Manager_Member_Edate" layoutX="137.0" layoutY="165.0" prefHeight="30.0" prefWidth="500.0" promptText="■퇴사일">
+               <font>
+                  <Font name="Malgun Gothic" size="16.0" />
+               </font></TextField>
+            <TextArea fx:id="Manager_Member_Ereason" layoutX="137.0" layoutY="220.0" prefHeight="85.0" prefWidth="500.0" promptText="■퇴사 사유">
+               <font>
+                  <Font name="Malgun Gothic" size="16.0" />
+               </font>
+            </TextArea>
+                    <Label fx:id="Manager_Fix2_page1" layoutX="389.0" layoutY="807.0" text="1">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </Label>
+                    <Label layoutX="403.0" layoutY="807.0" text="2" underline="true">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </Label>
+                </children>
+            </Pane>
+        </children>
+</AnchorPane>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #CCC9C7;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.erp.ManagerCommute">
+    <children>
+        <Pane prefHeight="60.0" prefWidth="1328.0" style="-fx-background-color: #4A96DD;" />
+        <Pane layoutY="211.0" prefHeight="721.0" prefWidth="180.0" style="-fx-background-color: #D9D9D9;">
+            <children>
+                <VBox prefHeight="200.0" prefWidth="180.0">
+                    <children>
+                        <Pane prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #4477FA;">
+                            <children>
+                                <Circle fill="#ffffff91" layoutX="165.0" layoutY="25.0" radius="6.0" stroke="#0000003b" strokeType="INSIDE" />
+                                <Circle fill="#ffffff91" layoutX="15.0" layoutY="25.0" radius="6.0" stroke="#0000003b" strokeType="INSIDE" />
+                                <Label alignment="CENTER" layoutX="47.0" layoutY="14.0" text="출 퇴근 현황">
+                                    <font>
+                                        <Font name="Malgun Gothic" size="15.0" />
+                                    </font></Label>
+                            </children></Pane>
+                        <Pane fx:id="Manager_Salary_Pane" prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <Circle fill="#0000003a" layoutX="165.0" layoutY="25.0" radius="6.0" stroke="#0000003b" strokeType="INSIDE" />
+                                <Circle fill="#0000003b" layoutX="15.0" layoutY="25.0" radius="6.0" stroke="#0000003b" strokeType="INSIDE" />
+                                <Label fx:id="Manager_Salary_Label" alignment="CENTER" layoutX="60.0" layoutY="14.0" text="급여현황">
+                                    <font>
+                                        <Font name="Malgun Gothic" size="15.0" />
+                                    </font></Label>
+                            </children></Pane>
+                        <Pane fx:id="Manager_Department_Pane" prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <Circle fill="#0000003a" layoutX="165.0" layoutY="25.0" radius="6.0" stroke="#0000003b" strokeType="INSIDE" />
+                                <Circle fill="#0000003b" layoutX="15.0" layoutY="25.0" radius="6.0" stroke="#0000003b" strokeType="INSIDE" />
+                                <Label fx:id="Manager_Department_Label" alignment="CENTER" layoutX="60.0" layoutY="14.0" text="부서 관리">
+                                    <font>
+                                        <Font name="Malgun Gothic" size="15.0" />
+                                    </font></Label>
+                            </children></Pane>
+                        <Pane fx:id="Manager_Member_Pane" prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="Manager_Member_Lable" alignment="CENTER" layoutX="60.0" layoutY="12.0" text="사원관리">
+                                    <font>
+                                        <Font name="Malgun Gothic" size="15.0" />
+                                    </font></Label>
+                                <Circle fill="#0000003a" layoutX="15.0" layoutY="25.0" radius="6.0" stroke="#0000003b" strokeType="INSIDE" />
+                                <Circle fill="#0000003b" layoutX="165.0" layoutY="25.0" radius="6.0" stroke="#0000003b" strokeType="INSIDE" />
+
+                            </children>
+                        </Pane>
+                    </children>
+                </VBox>
+            </children></Pane>
+        <VBox layoutX="310.0" layoutY="105.0" prefHeight="827.0" prefWidth="872.0">
+            <children>
+                <Pane prefHeight="427.0" prefWidth="872.0" style="-fx-background-color: #CCC9C7;">
+                    <children>
+                        <TextField fx:id="Manager_Commute_search" layoutX="5.0" layoutY="21.0" prefHeight="22.0" prefWidth="379.0" />
+                        <Button fx:id="Manager_Commute_Search_btn" layoutX="384.0" layoutY="21.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="64.0" style="-fx-background-color: #7491AC;" text="검색" textFill="WHITE" />
+                        <TableView fx:id="Manager_Commute_TableView" layoutY="65.0" prefHeight="340.0" prefWidth="872.0">
+                            <columns>
+                                <TableColumn prefWidth="62.0" text="index" />
+                                <TableColumn prefWidth="109.0" text="사원번호" />
+                                <TableColumn prefWidth="186.0" text="일자" />
+                                <TableColumn prefWidth="214.0" text="출근시간" />
+                                <TableColumn minWidth="0.0" prefWidth="204.0" text="퇴근시간" />
+                                <TableColumn prefWidth="102.0" text="근무시간" />
+                            </columns>
+                        </TableView>
+                        <Button fx:id="Manager_Commute_delete" layoutX="788.0" layoutY="21.0" mnemonicParsing="false" prefWidth="70.0" style="-fx-background-color: #7491AC; -fx-background-radius: 10;;" text="삭제" textFill="WHITE" />
+                        <Button fx:id="Manager_Commute_view" layoutX="718.0" layoutY="21.0" mnemonicParsing="false" prefWidth="70.0" style="-fx-background-color: #7491AC; -fx-background-radius: 10;;" text="상세정보" textFill="WHITE" />
+                        <Button fx:id="Manager_Commute_fix" layoutX="648.0" layoutY="21.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="70.0" style="-fx-background-color: #7491AC; -fx-background-radius: 10;;" text="수정" textFill="WHITE" />
+                        <Pane layoutY="398.0" prefHeight="30.0" prefWidth="872.0" style="-fx-background-color: #F6F5F6;" />
+                    </children>
+                </Pane>
+                <Pane prefHeight="340.0" prefWidth="870.0" style="-fx-background-color: #F6F5F6;">
+                    <children>
+                        <Button fx:id="Manager_Commute_insert" layoutX="788.0" layoutY="3.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="70.0" style="-fx-background-color: #7491AC; -fx-background-radius: 10;;" text="등록" textFill="WHITE" />
+                        <TextField fx:id="Manager_Commute_Num" layoutX="166.0" layoutY="40.0" prefHeight="20.0" prefWidth="540.0" />
+                        <TextField fx:id="Manager_Commute_in" layoutX="166.0" layoutY="160.0" prefHeight="20.0" prefWidth="540.0" />
+                        <TextField fx:id="Manager_Commute_out" layoutX="166.0" layoutY="220.0" prefHeight="20.0" prefWidth="540.0" />
+                        <TextField fx:id="Manager_Commute_time" layoutX="166.0" layoutY="280.0" prefHeight="20.0" prefWidth="540.0" />
+                        <Pane layoutX="80.0" layoutY="100.0" prefHeight="20.0" prefWidth="80.0" style="-fx-background-color: #7491AC;">
+                            <children>
+                                <Label alignment="CENTER" layoutX="16.0" layoutY="3.0" prefHeight="14.0" prefWidth="48.0" text="일자" textFill="WHITE" />
+                            </children>
+                        </Pane>
+                        <Pane layoutX="80.0" layoutY="280.0" prefHeight="20.0" prefWidth="80.0" style="-fx-background-color: #7491AC;">
+                            <children>
+                                <Label alignment="CENTER" layoutX="14.0" layoutY="3.0" text="근무시간" textFill="WHITE" />
+                            </children></Pane>
+                        <Pane layoutX="80.0" layoutY="220.0" prefHeight="20.0" prefWidth="80.0" style="-fx-background-color: #7491AC;">
+                            <children>
+                                <Label alignment="CENTER" layoutX="15.0" layoutY="2.0" text="퇴근시간" textFill="WHITE" />
+                            </children></Pane>
+                        <Pane layoutX="80.0" layoutY="160.0" prefHeight="20.0" prefWidth="80.0" style="-fx-background-color: #7491AC;">
+                            <children>
+                                <Label layoutX="16.0" layoutY="3.0" text="출근시간" textFill="WHITE" />
+                            </children></Pane>
+                        <Pane layoutX="80.0" layoutY="40.0" prefHeight="20.0" prefWidth="80.0" style="-fx-background-color: #7491AC;">
+                            <children>
+                                <Label layoutX="16.0" layoutY="3.0" text="사원번호" textFill="WHITE" />
+                            </children></Pane>
+                        <Label alignment="CENTER" layoutX="8.0" layoutY="-11.0" prefHeight="50.0" prefWidth="224.0" text="출퇴근 등록">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Label>
+                  <DatePicker fx:id="Manager_Commute_day" layoutX="166.0" layoutY="100.0" prefHeight="20.0" prefWidth="540.0" />
+
+                    </children></Pane>
+
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

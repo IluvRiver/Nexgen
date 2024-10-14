@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="932.0" prefWidth="1328.0" style="-fx-background-color: #CCC9C7;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.erp.Manager_join">
+   <children>
+      <Pane prefHeight="60.0" prefWidth="1328.0" style="-fx-background-color: #4A96DD;" />
+      <Pane layoutY="211.0" prefHeight="721.0" prefWidth="180.0" style="-fx-background-color: #D9D9D9;">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="180.0">
+               <children>
+                  <Pane fx:id="Manager_Commute_Pane" prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#0000003b" layoutX="165.0" layoutY="25.0" radius="6.0" stroke="#0000003b" strokeType="INSIDE" />
+                        <Circle fill="#0000003a" layoutX="15.0" layoutY="25.0" radius="6.0" stroke="#0000003b" strokeType="INSIDE" />
+                        <Label fx:id="Manager_Commute_Lable" alignment="CENTER" layoutX="47.0" layoutY="14.0" text="출 퇴근 현황">
+                           <font>
+                              <Font name="Malgun Gothic" size="15.0" />
+                           </font></Label>
+                     </children></Pane>
+                  <Pane fx:id="Manager_Salary_Pane" prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#0000003a" layoutX="165.0" layoutY="25.0" radius="6.0" stroke="#0000003b" strokeType="INSIDE" />
+                        <Circle fill="#0000003b" layoutX="15.0" layoutY="25.0" radius="6.0" stroke="#0000003b" strokeType="INSIDE" />
+                        <Label fx:id="Manager_Salary_Lable" alignment="CENTER" layoutX="60.0" layoutY="14.0" text="급여현황">
+                           <font>
+                              <Font name="Malgun Gothic" size="15.0" />
+                           </font></Label>
+                     </children></Pane>
+                  <Pane fx:id="Manager_Department_Pane" prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#0000003a" layoutX="165.0" layoutY="25.0" radius="6.0" stroke="#0000003b" strokeType="INSIDE" />
+                        <Circle fill="#0000003b" layoutX="15.0" layoutY="25.0" radius="6.0" stroke="#0000003b" strokeType="INSIDE" />
+                        <Label fx:id="Manager_Department_Lable" alignment="CENTER" layoutX="60.0" layoutY="14.0" text="부서 관리">
+                           <font>
+                              <Font name="Malgun Gothic" size="15.0" />
+                           </font></Label>
+                     </children></Pane>
+                  <Pane prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #4477FA;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="56.0" layoutY="12.0" text="사원관리" textFill="WHITE">
+                           <font>
+                              <Font name="Malgun Gothic" size="17.0" />
+                           </font></Label>
+                        <Circle fill="WHITE" layoutX="15.0" layoutY="25.0" radius="6.0" stroke="#0000003b" strokeType="INSIDE" />
+                        <Circle fill="WHITE" layoutX="165.0" layoutY="25.0" radius="6.0" stroke="#0000003b" strokeType="INSIDE" />
+
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children></Pane>
+      <VBox layoutX="310.0" layoutY="105.0" prefHeight="827.0" prefWidth="872.0">
+         <children>
+            <Pane prefHeight="427.0" prefWidth="872.0" style="-fx-background-color: #CCC9C7;">
+               <children>
+                  <TextField fx:id="Manager_manager_search" layoutX="-1.0" layoutY="21.0" prefHeight="22.0" prefWidth="385.0" />
+                  <Button layoutX="384.0" layoutY="21.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="64.0" style="-fx-background-color: #7491AC;" text="검색" textFill="WHITE" />
+                  <TableView fx:id="Manager_manager_TableView" layoutY="65.0" prefHeight="340.0" prefWidth="872.0">
+                     <columns>
+                        <TableColumn prefWidth="62.0" text="index" />
+                        <TableColumn prefWidth="90.0" text="사원명" />
+                        <TableColumn prefWidth="173.0" text="사원번호" />
+                        <TableColumn prefWidth="183.0" text="부서코드" />
+                        <TableColumn minWidth="0.0" prefWidth="189.0" text="부서명" />
+                        <TableColumn prefWidth="180.0" text="직책" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="Manager_manager_delete" layoutX="788.0" layoutY="21.0" mnemonicParsing="false" prefWidth="70.0" style="-fx-background-color: #7491AC; -fx-background-radius: 10;;" text="삭제" textFill="WHITE" />
+                  <Button fx:id="Manager_manager_view" layoutX="718.0" layoutY="21.0" mnemonicParsing="false" prefWidth="70.0" style="-fx-background-color: #7491AC; -fx-background-radius: 10;;" text="상세정보" textFill="WHITE" />
+                  <Button fx:id="Manager_manager_fix" layoutX="648.0" layoutY="21.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="70.0" style="-fx-background-color: #7491AC; -fx-background-radius: 10;;" text="수정" textFill="WHITE" />
+                  <Pane layoutY="398.0" prefHeight="30.0" prefWidth="872.0" style="-fx-background-color: #F6F5F6;" />
+               </children>
+            </Pane>
+            <Pane prefHeight="340.0" prefWidth="870.0" style="-fx-background-color: #F6F5F6;">
+               <children>
+                  <Button fx:id="Manager_manager_insert" layoutX="788.0" layoutY="3.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="70.0" style="-fx-background-color: #7491AC; -fx-background-radius: 10;;" text="등록" textFill="WHITE" />
+                  <TextField fx:id="Manager_manager_Name" layoutX="166.0" layoutY="40.0" prefHeight="20.0" prefWidth="540.0" />
+                  <TextField fx:id="Manager_manager_Num" layoutX="166.0" layoutY="97.0" prefHeight="20.0" prefWidth="540.0" />
+                  <TextField fx:id="Manager_manager_pw" layoutX="166.0" layoutY="154.0" prefHeight="20.0" prefWidth="540.0" />
+                  <TextField fx:id="Manager_manager_Dcode" layoutX="166.0" layoutY="211.0" prefHeight="20.0" prefWidth="540.0" />
+                  <TextField fx:id="Manager_manager_Spot" layoutX="166.0" layoutY="270.0" prefHeight="20.0" prefWidth="540.0" />
+                  <Pane layoutX="80.0" layoutY="40.0" prefHeight="20.0" prefWidth="80.0" style="-fx-background-color: #7491AC;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="16.0" layoutY="3.0" prefHeight="14.0" prefWidth="48.0" text="사원명" textFill="WHITE" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="80.0" layoutY="270.0" prefHeight="20.0" prefWidth="80.0" style="-fx-background-color: #7491AC;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="3.0" text="직위/직급" textFill="WHITE" />
+                     </children></Pane>
+                  <Pane layoutX="80.0" layoutY="211.0" prefHeight="20.0" prefWidth="80.0" style="-fx-background-color: #7491AC;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="15.0" layoutY="2.0" text="부서코드" textFill="WHITE" />
+                     </children></Pane>
+                  <Pane layoutX="80.0" layoutY="154.0" prefHeight="20.0" prefWidth="80.0" style="-fx-background-color: #7491AC;">
+                     <children>
+                        <Label layoutX="16.0" layoutY="3.0" text="비밀번호" textFill="WHITE" />
+                     </children></Pane>
+                  <Pane layoutX="80.0" layoutY="97.0" prefHeight="20.0" prefWidth="80.0" style="-fx-background-color: #7491AC;">
+                     <children>
+                        <Label layoutX="16.0" layoutY="3.0" text="사원번호" textFill="WHITE" />
+                     </children></Pane>
+                  <Label alignment="CENTER" layoutX="8.0" layoutY="-11.0" prefHeight="50.0" prefWidth="224.0" text="사원 추가 등록">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+
+               </children></Pane>
+
+         </children>
+      </VBox>
+
+   </children>
+</AnchorPane>
