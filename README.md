@@ -25,3 +25,5 @@
 [테이블명세서](https://www.notion.so/4f34b06ea7cd4c3dbf2984ffebc0b479?pvs=21)
 
 [요구사항 분석도](https://www.notion.so/9c8ac44099e94d9c8c5bde77752c9033?pvs=21)
+
+![사원관리-메인페이지](https://github.com/user-attachments/assets/009940d4-2cca-4d29-be9c-84bf54da3197)
